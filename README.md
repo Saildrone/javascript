@@ -4009,6 +4009,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     var { type, ...coords } = data;
     // 'coords' is now the 'data' object without its 'type' property.
     
+    // Optionally, use underscores to represent unused parameters in callbacks.
+    // Be careful when using Lodash/Underscore - you may use multiple underscores
+    // should a single underscore variable already be scoped.
     const handler = (request, _) => { /* Your function body here */ }
     ```
     
